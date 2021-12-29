@@ -1,38 +1,87 @@
-.App {
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-image: url("./images/cloudy.jpg");
+  background-position: top;
+  background-size: cover;
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
+  font-family: 'Merriweather', serif;
 }
 
-.App-link {
-  color: #61dafb;
+.container{
+  display: none;
+  /* border: 2px solid red; */
+  width: 30vw;
+  /* height: 70vh; */
+  position: relative;
+  margin: 100px auto;
+  justify-content: center;
+  background: linear-gradient(to right, #fc00ff, #00dbde);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.search_box{
+  margin-top: 20px;
+}
+.search_bar{
+  width: 400px;
+  height: 30px;
+  border: none;
+  outline: none ;
+  border-radius: 20px;
+  padding: 20px;
+  
+}
+.tempe{
+  font-size: 5.5rem;
+  font-weight: 400;
+  text-shadow: 4px 3px #766f6f;
+  color: #ffc108d9;
+}
+.city div{
+  font-size: 15px;
+  margin: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#city_name{
+  padding-top: 24px;
+  font-size: 25px;
+}
+#city_name span{
+  margin-right: 3px;
+  
+    color: #ff930c;
+    
+    font-size: 20px;
+}
+
+.tempe span{
+  font-size: 60px;
+    margin-right: 10px;
+    color: #df31e2;
+    text-shadow: none
+}
+
+.des{
+
+  font-size: 20px;
+  color: #861ce6;
+  right: -157px;
+  position: relative;
+  bottom: 50px;
+}
+
+.item{
+  margin-bottom: 40px;
+}
+.item p{
+  margin-top: 0;
+  margin-bottom: 0rem;
 }
